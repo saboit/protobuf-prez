@@ -1,0 +1,7 @@
+fieldThermometerId: 1234567890
+measurementType: PERIODIC
+measuredTemperaturesInDegreeCelsius: 22.32
+measuredTemperaturesInDegreeCelsius: 4.18
+lastRecordedDeviceError {
+  message: "Overheating"
+}

@@ -1,0 +1,18 @@
+syntax = 'proto3';
+
+message MeasuredTemperatures {
+  enum MeasurementType {
+    PERIODIC = 0;
+    REQUESTED = 1;
+    EXTREMITY = 2;
+  }
+  message DeviceError {
+    optional string message = 1;
+  }
+  optional int64 fieldThermometerId = 1;
+  optional MeasurementType measurementType = 2;
+  repeated float measuredTemperaturesInDegreeCelsius = 3;
+  optional DeviceError lastRecordedDeviceError = 4;
+}
+
+
